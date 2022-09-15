@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.AAYZOWS-OoBcKtkbej8AzwHaE8?w=280&h=187&c=7&r=0&o=5&pid=1.7" alt="Avatar"
+                 class="img-rounded" width="204" height="206" style="border-radius: 50%;margin-left:25%;">
+                <div class="text-center">
+                    <h1>Admin Portal</h1>
+                </div>
+                    <form [formGroup]="loginForm" (ngSubmit)="login()">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input formControlName="email" placeholder="Enter Email" type="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input formControlName="password" placeholder="Enter Password" type="password" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                      </form>
+                      <a routerLink="/signup">New User ? Click to Signup</a>
+            </div>
+        </div>
+    </div>
+</div>
